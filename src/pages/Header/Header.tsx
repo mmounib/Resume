@@ -5,8 +5,12 @@ import {FaMousePointer} from 'react-icons/fa'
 import {BiSolidMap} from 'react-icons/bi'
 import { ReactElement } from 'react';
 import { HeaderInterface } from '../../interfaces/HeaderInterface'
+import { Header, Contact } from '../../state/store'
 
-
+interface HeaderProps {
+  header: Header,
+  contact: Contact,
+}
 
 const helper = ({ text, icon }: HeaderInterface): ReactElement => {
   return (
@@ -16,19 +20,19 @@ const helper = ({ text, icon }: HeaderInterface): ReactElement => {
     </div>
   );
 };
-const Header = () => {
+const Header = ({header, contact}: HeaderProps) => {
   return (
     <section className="header">
       <div className="header-flex">
-        <h1>mouad mounib</h1>
-        <span>Full Stack Developer</span>
+        <h1>{header.name}</h1>
+        <span>{header.subName}</span>
         <div className='flex-infos'>
-          {helper({ text:"mouadmounib00@gmail.com", icon:<MdEmail size={20}/>})} 
-          {helper({text:"+212646819652", icon:<AiFillPhone size={20}/>})}
-          {helper({text:"Casablanca, Morocco", icon:<BiSolidMap size={20}/>})}
-          {helper({text:"https://www.linkedin.com/in/mouad-mounib-954418193/", icon:<AiFillLinkedin size={20}/>})}
-          {helper({text:"https://www.github.com/mmounib/ ", icon:<AiFillGithub size={20}/>})}
-          {helper({text:"https://mouadmounib.vercel.app/", icon:<FaMousePointer size={15}/>})}
+          {helper({ text:`${contact.email}`, icon:<MdEmail size={20}/>})} 
+          {helper({text:`${contact.phone}`, icon:<AiFillPhone size={20}/>})}
+          {helper({text:`${contact.location}`, icon:<BiSolidMap size={20}/>})}
+          {helper({text:`${contact.linkedin}`, icon:<AiFillLinkedin size={20}/>})}
+          {helper({text:`${contact.github}`, icon:<AiFillGithub size={20}/>})}
+          {helper({text:`${contact.portfolio}`, icon:<FaMousePointer size={15}/>})}
         </div>
       </div>
     </section>

@@ -1,0 +1,66 @@
+{
+  "resume": {
+    "header": {
+      "name": "Mouad Mounib",
+      "subName": "Full Stack Developer"
+    },
+    "contact": {
+      "email": "mouadmounib00@gmail.com",
+      "phone": "+212646819652",
+      "location": "Casablanca, Morocco",
+      "linkedin": "https://www.linkedin.com/in/mouad-mounib-954418193/",
+      "github": "https://www.github.com/mmounib/",
+      "portfolio": "https://mouadmounib.vercel.app/"
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "FT_TRANSCENDENCE",
+        "subtitle": "full stack online ping pong website",
+        "description": "An Online Ping Pong game with real-time chat application using socket.io build entirely with Typescript.",
+        "technologies": "Typescript - ReactJs - Javascript - ThreeJs - PostgresQL - NestJs"
+      },
+      {
+        "id": 2,
+        "title": "car showcasing application",
+        "subtitle": "full stack nextJs website",
+        "description": "A Car Showcasing App with user authentication build entirely with Next using Typescript with the help of NextAuth.",
+        "technologies": "Typescript - NextJs - NextAuth.js"
+      },
+      {
+        "id": 3,
+        "title": "booking application",
+        "subtitle": "full stack MERN application",
+        "description": "A Booking Application like Airbnb with user authentication and database usage.",
+        "technologies": "Typescript - ReactJs - NoSQL - MongoDB - Javascript - ExpressJs"
+      }
+    ],
+    "education": [
+      {
+        "date": "2021-2023",
+        "institution": "1337 - 42 Network",
+        "degree": "Software Engineering"
+      },
+      {
+        "date": "2018-2021",
+        "institution": "Hassan II University",
+        "degree": "Bachelor Degree / English Studies"
+      }
+    ],
+    "languages": {"arabic": "Arabic", "english": "English", "french": "French"},
+    "skills": [
+      { "name": "Typescript" },
+      { "name": "Javascript" },
+      { "name": "ReactJs" },
+      { "name": "NextJs" },
+      { "name": "Node.js" },
+      { "name": "Express.js" },
+      { "name": "NoSQL" },
+      { "name": "MongoDB" },
+      { "name": "SQL" },
+      { "name": "C++" },
+      { "name": "Git/Github" },
+      { "name": "Docker" }
+    ]
+  }
+}
