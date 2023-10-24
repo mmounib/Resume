@@ -8,7 +8,7 @@ interface SkillProps {
 
 const Skills = ({ skills }: SkillProps) => {
   return (
-    <section className="skills-flex">
+    <section id="skills"className="skills-flex">
       <h2>Skills</h2>
       <div className="skills-content">
         {skills.map((skill, index) => (

@@ -22,7 +22,7 @@ const helper = ({ text, icon }: HeaderInterface): ReactElement => {
 };
 const Header = ({header, contact}: HeaderProps) => {
   return (
-    <section className="header">
+    <section id="Header" className="header">
       <div className="header-flex">
         <h1>{header.name}</h1>
         <span>{header.subName}</span>

@@ -1,13 +1,13 @@
 import { Provider } from "react-redux";
-import Resume from "./pages/Resume";
 import "./styles/App.scss";
 import store from "./state/store";
+import Routing from "./routes/routes";
 
 function App() {
   return (
     <div className="main">
       <Provider store={store}>
-        <Resume />
+        <Routing />
       </Provider>
     </div>
   );

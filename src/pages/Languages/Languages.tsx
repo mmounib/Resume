@@ -6,7 +6,7 @@ interface LanguageProp {
 }
 const Languages = ({languages}: LanguageProp) => {
   return (
-    <section className='languages-flex'>
+    <section id="languages" className='languages-flex'>
         <h2>languages</h2>
         <div className="language-content">
             <li><span>{languages.arabic}</span> </li>

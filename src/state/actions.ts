@@ -1,4 +1,3 @@
-// actions.ts
 import { ThunkAction } from "redux-thunk";
 import {
   RootState,
@@ -8,7 +7,7 @@ import {
   setLanguages,
   setProjects,
   setSkills,
-} from "./store"; // Import the RootState from your store file
+} from "./store";
 
 export const fetchData = (): ThunkAction<void, RootState, unknown, any> => {
   return async (dispatch) => {
@@ -23,7 +22,7 @@ export const fetchData = (): ThunkAction<void, RootState, unknown, any> => {
       dispatch(setLanguages(data.languages));
       dispatch(setSkills(data.skills));
     } catch (error) {
-      // dispatch(setError(error)); // You can define an error action
+      console.log(error);
     }
   };
 };

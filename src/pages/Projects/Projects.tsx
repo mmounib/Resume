@@ -4,7 +4,7 @@ import "../../styles/Projects.scss";
 
 const Projects = ({ projects }: { projects: Project[] }) => {
   return (
-    <section className="projects-flex">
+    <section id="projects" className="projects-flex">
       <h2>Projects</h2>
       <div className="projects">
         {projects.map((project) => (

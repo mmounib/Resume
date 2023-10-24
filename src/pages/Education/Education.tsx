@@ -3,7 +3,7 @@ import "../../styles/Education.scss";
 
 const Education = ({ education }: { education: Education[] }) => {
   return (
-    <section className="education-flex">
+    <section id="education" className="education-flex">
       <h2>Education</h2>
       {education.map((educ, index) => (
         <>
